@@ -9,7 +9,7 @@ from os.path import basename
 
 usage="""
 SYNOPSIS:
-'{0}' entry_file n prefix
+{0} entry_file n prefix
 
 DESCRIPTION:
 Takes a file containing a serie of entries and split it in several files
