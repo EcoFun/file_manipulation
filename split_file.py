@@ -35,7 +35,10 @@ j = 1
 with open(inp) as f:
     for l in f:
         # open output file
-        if i % sec == 1:
+        if sec == 1:
+            fout = "%s_%s_%s.txt" % (pout, j, i)
+            out = open(fout, "w")
+        elif i % sec == 1:
             fout = "%s_%s_%s-%s.txt" % (pout, j, i, (i + sec -1))
             out = open(fout, "w")
         
