@@ -1,0 +1,22 @@
+# forbid all files!(any file matching the following patterns is exclude 
+    # from git control)
+*
+
+# then set exceptions to be included (thanks to the '!' symbol, even if they contain
+    # the above patterns, the files matching the above patterns will be included)
+!.gitignore
+!.gitignore_backup
+!*.jl
+!LICENSE
+!*.md
+!*.pl
+!*.py
+!*README*
+!*.R
+!*.sh
+
+# specific files to save
+
+# ...even if they are in subdirectories
+!*/
+
